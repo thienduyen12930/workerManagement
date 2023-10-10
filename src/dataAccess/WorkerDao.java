@@ -79,7 +79,7 @@ public class WorkerDao {
 
     public void displayInfomationSalary(List<SalaryHistory> salaryHistorys) {
         List<SalaryHistory> list = getInfomationSalary(salaryHistorys);
-        salaryHistorys.forEach(s -> System.out.println(s));
+        list.forEach(s -> System.out.println(s));
     }
 
     public List<SalaryHistory> getInfomationSalary(List<SalaryHistory> salaryHistorys) {
